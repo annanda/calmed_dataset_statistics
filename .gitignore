@@ -1,2 +1,7 @@
 /.ipynb_checkpoints/*
 /.idea
+/datasets/participant_1/
+/datasets/participant_2_1/
+/datasets/participant_2_2/
+/datasets/*.zip
+/datasets/*.pkl
