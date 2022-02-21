@@ -1,9 +1,10 @@
 import pandas as pd
 
 COLOURS = ['green', 'yellow', 'red', 'blue']
+EMOTIONS = ['green', 'yellow', 'red', 'blue']
 
 
-def get_value_counts(df_input):
+def get_value_count_dict(df_input):
     counts = df_input['emotion_zone'].value_counts()
     count_values_emotions = {'green': 0, 'blue': 0, 'yellow': 0, 'red': 0, 'video_part': None}
 
@@ -18,7 +19,7 @@ def get_value_counts(df_input):
 
 
 def generate_dic_to_plot(df_input):
-    count_values = get_value_counts(df_input)
+    count_values = get_value_count_dict(df_input)
 
     keys = ['green', 'yellow', 'red', 'blue']
     vals = [count_values[k] for k in keys]
@@ -27,12 +28,25 @@ def generate_dic_to_plot(df_input):
     return keys, vals, percents
 
 
-def add_column_to_frames(frames):
+def add_video_part_column_to_dataframes(dataframes):
+    """ The list of dataframes needs to be sorted by video part
+    :param dataframes: a sorted list of pandas dataframe
+    :return: a list of pandas dataframes with one additional column.
+    """
+    # TODO fix this code to not depend on the order of the dataframes.
     i = 1
-    for frame in frames:
-        frame['video_part'] = i
+    for dataframe in dataframes:
+        dataframe['video_part'] = i
         i = i + 1
-    return frames
+    return dataframes
+
+
+def create_whole_session_dict_values(dataframes):
+    dataframes_list = []
+    for dataframe in dataframes:
+        dataframe_dict = get_value_count_dict(dataframe)
+        dataframes_list.append(dataframe_dict)
+    return dataframes_list
 
 
 def concat_and_save_frames(frames, file_name):
