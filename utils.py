@@ -32,6 +32,41 @@ df_22_5 = pd.read_csv('datasets/participant_2_2/study_08112021_session_02_02_05.
 df_22_6 = pd.read_csv('datasets/participant_2_2/study_08112021_session_02_02_06.mp4.csv')
 dataframes_22 = [df_22_1, df_22_2, df_22_3, df_22_4, df_22_5, df_22_6]
 
+# session 3.1
+df_31_1 = pd.read_csv('datasets/participant_3_1/study_06042022_session_03_01_01.mp4.csv')
+df_31_2 = pd.read_csv('datasets/participant_3_1/study_06042022_session_03_01_02.mp4.csv')
+df_31_3 = pd.read_csv('datasets/participant_3_1/study_06042022_session_03_01_03.mp4.csv')
+df_31_4 = pd.read_csv('datasets/participant_3_1/study_06042022_session_03_01_04.mp4.csv')
+df_31_5 = pd.read_csv('datasets/participant_3_1/study_06042022_session_03_01_05.mp4.csv')
+df_31_6 = pd.read_csv('datasets/participant_3_1/study_06042022_session_03_01_06.mp4.csv')
+df_31_7 = pd.read_csv('datasets/participant_3_1/study_06042022_session_03_01_07.mp4.csv')
+dataframes_31 = [df_31_1, df_31_2, df_31_3, df_31_4, df_31_5, df_31_6, df_31_7]
+
+# session 3.2
+df_32_1 = pd.read_csv('datasets/participant_3_2/study_05052022_session_03_02_01.mp4.csv')
+df_32_2 = pd.read_csv('datasets/participant_3_2/study_05052022_session_03_02_02.mp4.csv')
+df_32_3 = pd.read_csv('datasets/participant_3_2/study_05052022_session_03_02_03.mp4.csv')
+df_32_4 = pd.read_csv('datasets/participant_3_2/study_05052022_session_03_02_04.mp4.csv')
+df_32_5 = pd.read_csv('datasets/participant_3_2/study_05052022_session_03_02_05.mp4.csv')
+df_32_6 = pd.read_csv('datasets/participant_3_2/study_05052022_session_03_02_06.mp4.csv')
+dataframes_32 = [df_32_1, df_32_2, df_32_3, df_32_4, df_32_5, df_32_6]
+
+# session 4.1
+df_41_1 = pd.read_csv('datasets/participant_4_1/study_20042022_session_04_01_01.mp4.csv')
+df_41_2 = pd.read_csv('datasets/participant_4_1/study_20042022_session_04_01_02.mp4.csv')
+df_41_3 = pd.read_csv('datasets/participant_4_1/study_20042022_session_04_01_03.mp4.csv')
+df_41_4 = pd.read_csv('datasets/participant_4_1/study_20042022_session_04_01_04.mp4.csv')
+df_41_5 = pd.read_csv('datasets/participant_4_1/study_20042022_session_04_01_05.mp4.csv')
+dataframes_41 = [df_41_1, df_41_2, df_41_3, df_41_4, df_41_5]
+
+# session 4.2
+df_42_1 = pd.read_csv('datasets/participant_4_2/study_25042022_session_04_02_01.mp4.csv')
+df_42_2 = pd.read_csv('datasets/participant_4_2/study_25042022_session_04_02_02.mp4.csv')
+df_42_3 = pd.read_csv('datasets/participant_4_2/study_25042022_session_04_02_03.mp4.csv')
+df_42_4 = pd.read_csv('datasets/participant_4_2/study_25042022_session_04_02_04.mp4.csv')
+df_42_5 = pd.read_csv('datasets/participant_4_2/study_25042022_session_04_02_05.mp4.csv')
+dataframes_42 = [df_42_1, df_42_2, df_42_3, df_42_4, df_42_5]
+
 
 def get_value_count_dict(df_input):
     counts = df_input['emotion_zone'].value_counts()
