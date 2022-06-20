@@ -3,5 +3,9 @@
 /datasets/participant_1/
 /datasets/participant_2_1/
 /datasets/participant_2_2/
+/datasets/participant_3_1/
+/datasets/participant_3_2/
+/datasets/participant_4_1/
+/datasets/participant_4_2/
 /datasets/*.zip
 /datasets/*.pkl
