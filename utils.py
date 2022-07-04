@@ -5,66 +5,66 @@ EMOTIONS = ['green', 'yellow', 'red', 'blue']
 
 # reading all the datasets
 # session 1.1
-df_11_1 = pd.read_csv('datasets/participant_1/study_20210526_01_01.mp4.csv')
-df_11_2 = pd.read_csv('datasets/participant_1/study_20210526_01_02.mp4.csv')
-df_11_3 = pd.read_csv('datasets/participant_1/study_20210526_01_03.mp4.csv')
-df_11_4 = pd.read_csv('datasets/participant_1/study_20210526_01_04.mp4.csv')
-df_11_5 = pd.read_csv('datasets/participant_1/study_20210526_01_05.mp4.csv')
-df_11_6 = pd.read_csv('datasets/participant_1/study_20210526_01_06.mp4.csv')
-df_11_7 = pd.read_csv('datasets/participant_1/study_20210526_01_07.mp4.csv')
+df_11_1 = pd.read_csv('datasets/session_01_01/session_01_01_01.csv')
+df_11_2 = pd.read_csv('datasets/session_01_01/session_01_01_02.csv')
+df_11_3 = pd.read_csv('datasets/session_01_01/session_01_01_03.csv')
+df_11_4 = pd.read_csv('datasets/session_01_01/session_01_01_04.csv')
+df_11_5 = pd.read_csv('datasets/session_01_01/session_01_01_05.csv')
+df_11_6 = pd.read_csv('datasets/session_01_01/session_01_01_06.csv')
+df_11_7 = pd.read_csv('datasets/session_01_01/session_01_01_07.csv')
 dataframes_11 = [df_11_1, df_11_2, df_11_3, df_11_4, df_11_5, df_11_6, df_11_7]
 
 # session 2.1
-df_21_1 = pd.read_csv('datasets/participant_2_1/study_01_11_2021_01.mp4.csv')
-df_21_2 = pd.read_csv('datasets/participant_2_1/study_01_11_2021_02.mp4.csv')
-df_21_3 = pd.read_csv('datasets/participant_2_1/study_01_11_2021_03.mp4.csv')
-df_21_4 = pd.read_csv('datasets/participant_2_1/study_01_11_2021_04.mp4.csv')
-df_21_5 = pd.read_csv('datasets/participant_2_1/study_01_11_2021_05.mp4.csv')
-df_21_6 = pd.read_csv('datasets/participant_2_1/study_01_11_2021_06.mp4.csv')
+df_21_1 = pd.read_csv('datasets/session_02_01/session_02_01_01.csv')
+df_21_2 = pd.read_csv('datasets/session_02_01/session_02_01_02.csv')
+df_21_3 = pd.read_csv('datasets/session_02_01/session_02_01_03.csv')
+df_21_4 = pd.read_csv('datasets/session_02_01/session_02_01_04.csv')
+df_21_5 = pd.read_csv('datasets/session_02_01/session_02_01_05.csv')
+df_21_6 = pd.read_csv('datasets/session_02_01/session_02_01_06.csv')
 dataframes_21 = [df_21_1, df_21_2, df_21_3, df_21_4, df_21_5, df_21_6]
 
 # session 2.2
-df_22_1 = pd.read_csv('datasets/participant_2_2/study_08112021_session_02_02_01.mp4.csv')
-df_22_2 = pd.read_csv('datasets/participant_2_2/study_08112021_session_02_02_02.mp4.csv')
-df_22_3 = pd.read_csv('datasets/participant_2_2/study_08112021_session_02_02_03.mp4.csv')
-df_22_4 = pd.read_csv('datasets/participant_2_2/study_08112021_session_02_02_04.mp4.csv')
-df_22_5 = pd.read_csv('datasets/participant_2_2/study_08112021_session_02_02_05.mp4.csv')
-df_22_6 = pd.read_csv('datasets/participant_2_2/study_08112021_session_02_02_06.mp4.csv')
+df_22_1 = pd.read_csv('datasets/session_02_02/session_02_02_01.csv')
+df_22_2 = pd.read_csv('datasets/session_02_02/session_02_02_02.csv')
+df_22_3 = pd.read_csv('datasets/session_02_02/session_02_02_03.csv')
+df_22_4 = pd.read_csv('datasets/session_02_02/session_02_02_04.csv')
+df_22_5 = pd.read_csv('datasets/session_02_02/session_02_02_05.csv')
+df_22_6 = pd.read_csv('datasets/session_02_02/session_02_02_06.csv')
 dataframes_22 = [df_22_1, df_22_2, df_22_3, df_22_4, df_22_5, df_22_6]
 
 # session 3.1
-df_31_1 = pd.read_csv('datasets/participant_3_1/study_06042022_session_03_01_01.mp4.csv')
-df_31_2 = pd.read_csv('datasets/participant_3_1/study_06042022_session_03_01_02.mp4.csv')
-df_31_3 = pd.read_csv('datasets/participant_3_1/study_06042022_session_03_01_03.mp4.csv')
-df_31_4 = pd.read_csv('datasets/participant_3_1/study_06042022_session_03_01_04.mp4.csv')
-df_31_5 = pd.read_csv('datasets/participant_3_1/study_06042022_session_03_01_05.mp4.csv')
-df_31_6 = pd.read_csv('datasets/participant_3_1/study_06042022_session_03_01_06.mp4.csv')
-df_31_7 = pd.read_csv('datasets/participant_3_1/study_06042022_session_03_01_07.mp4.csv')
+df_31_1 = pd.read_csv('datasets/session_03_01/session_03_01_01.csv')
+df_31_2 = pd.read_csv('datasets/session_03_01/session_03_01_02.csv')
+df_31_3 = pd.read_csv('datasets/session_03_01/session_03_01_03.csv')
+df_31_4 = pd.read_csv('datasets/session_03_01/session_03_01_04.csv')
+df_31_5 = pd.read_csv('datasets/session_03_01/session_03_01_05.csv')
+df_31_6 = pd.read_csv('datasets/session_03_01/session_03_01_06.csv')
+df_31_7 = pd.read_csv('datasets/session_03_01/session_03_01_07.csv')
 dataframes_31 = [df_31_1, df_31_2, df_31_3, df_31_4, df_31_5, df_31_6, df_31_7]
 
 # session 3.2
-df_32_1 = pd.read_csv('datasets/participant_3_2/study_05052022_session_03_02_01.mp4.csv')
-df_32_2 = pd.read_csv('datasets/participant_3_2/study_05052022_session_03_02_02.mp4.csv')
-df_32_3 = pd.read_csv('datasets/participant_3_2/study_05052022_session_03_02_03.mp4.csv')
-df_32_4 = pd.read_csv('datasets/participant_3_2/study_05052022_session_03_02_04.mp4.csv')
-df_32_5 = pd.read_csv('datasets/participant_3_2/study_05052022_session_03_02_05.mp4.csv')
-df_32_6 = pd.read_csv('datasets/participant_3_2/study_05052022_session_03_02_06.mp4.csv')
+df_32_1 = pd.read_csv('datasets/session_03_02/session_03_02_01.csv')
+df_32_2 = pd.read_csv('datasets/session_03_02/session_03_02_02.csv')
+df_32_3 = pd.read_csv('datasets/session_03_02/session_03_02_03.csv')
+df_32_4 = pd.read_csv('datasets/session_03_02/session_03_02_04.csv')
+df_32_5 = pd.read_csv('datasets/session_03_02/session_03_02_05.csv')
+df_32_6 = pd.read_csv('datasets/session_03_02/session_03_02_06.csv')
 dataframes_32 = [df_32_1, df_32_2, df_32_3, df_32_4, df_32_5, df_32_6]
 
 # session 4.1
-df_41_1 = pd.read_csv('datasets/participant_4_1/study_20042022_session_04_01_01.mp4.csv')
-df_41_2 = pd.read_csv('datasets/participant_4_1/study_20042022_session_04_01_02.mp4.csv')
-df_41_3 = pd.read_csv('datasets/participant_4_1/study_20042022_session_04_01_03.mp4.csv')
-df_41_4 = pd.read_csv('datasets/participant_4_1/study_20042022_session_04_01_04.mp4.csv')
-df_41_5 = pd.read_csv('datasets/participant_4_1/study_20042022_session_04_01_05.mp4.csv')
+df_41_1 = pd.read_csv('datasets/session_04_01/session_04_01_01.csv')
+df_41_2 = pd.read_csv('datasets/session_04_01/session_04_01_02.csv')
+df_41_3 = pd.read_csv('datasets/session_04_01/session_04_01_03.csv')
+df_41_4 = pd.read_csv('datasets/session_04_01/session_04_01_04.csv')
+df_41_5 = pd.read_csv('datasets/session_04_01/session_04_01_05.csv')
 dataframes_41 = [df_41_1, df_41_2, df_41_3, df_41_4, df_41_5]
 
 # session 4.2
-df_42_1 = pd.read_csv('datasets/participant_4_2/study_25042022_session_04_02_01.mp4.csv')
-df_42_2 = pd.read_csv('datasets/participant_4_2/study_25042022_session_04_02_02.mp4.csv')
-df_42_3 = pd.read_csv('datasets/participant_4_2/study_25042022_session_04_02_03.mp4.csv')
-df_42_4 = pd.read_csv('datasets/participant_4_2/study_25042022_session_04_02_04.mp4.csv')
-df_42_5 = pd.read_csv('datasets/participant_4_2/study_25042022_session_04_02_05.mp4.csv')
+df_42_1 = pd.read_csv('datasets/session_04_02/session_04_02_01.csv')
+df_42_2 = pd.read_csv('datasets/session_04_02/session_04_02_02.csv')
+df_42_3 = pd.read_csv('datasets/session_04_02/session_04_02_03.csv')
+df_42_4 = pd.read_csv('datasets/session_04_02/session_04_02_04.csv')
+df_42_5 = pd.read_csv('datasets/session_04_02/session_04_02_05.csv')
 dataframes_42 = [df_42_1, df_42_2, df_42_3, df_42_4, df_42_5]
 
 
