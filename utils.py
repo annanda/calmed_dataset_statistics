@@ -152,6 +152,7 @@ df_42_5_specialist = pd.read_csv('datasets/specialist/session_04_02/session_04_0
 dataframes_42_specialist = [df_42_1_specialist, df_42_2_specialist, df_42_3_specialist, df_42_4_specialist,
                             df_42_5_specialist]
 
+
 # all data
 whole_data_specialist = pd.read_csv('datasets/specialist/all_data.csv')
 all_train_data_specialist = pd.read_csv('datasets/specialist/all_data_train.csv')
@@ -235,7 +236,7 @@ def get_source_points_for_plot_from_session(session_id):
     return source_points
 
 
-def concatenate_save_data_session(session, annotation_type='parents'):
+def concatenate_save_data_session(session, annotation_type):
     train = pd.read_csv(f"datasets/{annotation_type}/{session}/{session}_train.csv")
     dev = pd.read_csv(f"datasets/{annotation_type}/{session}/{session}_dev.csv")
     test = pd.read_csv(f"datasets/{annotation_type}/{session}/{session}_test.csv")
@@ -244,7 +245,7 @@ def concatenate_save_data_session(session, annotation_type='parents'):
     session_data_clean.to_csv(f"datasets/{annotation_type}/{session}.csv")
 
 
-def concate_save_all_data(annotation_type='parents'):
+def concate_save_all_data(annotation_type):
     session_01_01 = pd.read_csv(f"datasets/{annotation_type}/session_01_01.csv")
     session_02_01 = pd.read_csv(f"datasets/{annotation_type}/session_02_01.csv")
     session_02_02 = pd.read_csv(f"datasets/{annotation_type}/session_02_02.csv")
@@ -259,7 +260,7 @@ def concate_save_all_data(annotation_type='parents'):
     all_data.to_csv(f"datasets/{annotation_type}/all_data.csv")
 
 
-def concate_save_set_all_data(sessions, set_name, annotation_type='parents'):
+def concate_save_set_all_data(sessions, set_name, annotation_type):
     set_list = []
     for session in sessions:
         set_dataframe = pd.read_csv(f"datasets/{annotation_type}/{session}/{session}_{set_name}.csv")
@@ -281,12 +282,12 @@ if __name__ == '__main__':
         'session_04_02',
     ]
     # for session in sessions:
-    #     concatenate_save_data_session(session)
+    #     concatenate_save_data_session(session, 'specialist')
     # print('testing')
-    concate_save_all_data()
+    # concate_save_all_data('specialist')
     sets = ['train', 'dev', 'test']
     # for set_name in sets:
-    #     concate_save_set_all_data(sessions, set_name)
+    #     concate_save_set_all_data(sessions, set_name, 'specialist')
 
 ##################################
 # Only run the lines below when needing to create a new dataset
