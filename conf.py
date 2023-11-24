@@ -4,9 +4,11 @@ import os.path
 from decouple import config
 
 EMOTIONS = ['blue', 'green', 'red', 'yellow']
-SESSIONS = ['session_01_01', 'session_02_01', 'session_02_01', 'session_03_01', 'session_03_02', 'session_04_01',
+SESSIONS = ['session_01_01', 'session_02_01', 'session_02_02', 'session_03_01', 'session_03_02', 'session_04_01',
             'session_04_02']
-PARTICIPANTS = {1: ['session_01_01'], 2: ['session_02_01', 'session_02_01']}
+PARTICIPANTS = {'01': ['session_01_01'], '02': ['session_02_01', 'session_02_01'],
+                '03': ['session_03_01', 'session_03_02'], '04': ['session_04_01',
+                                                                 'session_04_02']}
 ANNOTATIONS = ['parents', 'specialist']
 MODALITIES = ['video']
 FEATURES = {
@@ -22,5 +24,13 @@ LLD_PARAMETER_GROUP = {
     'temporal_features': ['temporal_features']
 }
 
+CLASSES_NAME_TO_NUMBERS_DICT = {
+    'blue': 0,
+    'green': 1,
+    'red': 2,
+    'yellow': 3
+}
+
 main_folder = pathlib.Path(__file__).parent
 dataset_n_features_folder = os.path.join(main_folder, 'datasets', 'features_n_labels')
+dataset_n_features_analysis_folder = os.path.join(main_folder, 'datasets', 'features_n_labels_analysis')
