@@ -10,3 +10,5 @@
 /datasets/*.zip
 /datasets/*.pkl
 /datasets/legacy/*
+/datasets/
+/dabases/
